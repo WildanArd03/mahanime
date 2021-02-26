@@ -1,4 +1,7 @@
 var page = 1
+var d = new Date();
+var getYear = d.getFullYear();
+$('#date').html(getYear);
 function getData() {
     $('#anime-list').html('');
     $.ajax({
@@ -15,15 +18,15 @@ function getData() {
             $('#anime-list').append(`
             <div class="col-md-6 mb-4">
                 <div class="row">
-                    <div class="col-md-4 mb-4 p-0">
+                    <div class="col-md-5 col-sm-5 col-5 - mb-4 p-0">
                         <a href="#" class="detail-anime" data-bs-toggle="modal" data-bs-target="#detail-anime"data-id="`+ data.id +`">
                             <div class="flexbox-thumb">
-                                <img src="`+ data.image +`" class="img-fluid">
+                                <img src="`+ data.image +`" class="img">
                                 <div class="flexbox-number">`+ no++ +`</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7 col-sm-7 col-7">
                         <div class="flexbox3-side">
                             <div class="title">`+ data.title +`</div>
                             <div class="chapter">Episode : `+ data.episode +`</div>

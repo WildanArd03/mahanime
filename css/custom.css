@@ -31,3 +31,8 @@
     transition: .2s;
     z-index: -999;
 }
+.flexbox3-side .chapter {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
