@@ -44,7 +44,7 @@ getData()
 $('#back').hide();
 $('#next').on('click', function() {
     page++;
-    getData();
+    getData()
     $('#back').show();
 })
 $('#back').on('click', function() {
