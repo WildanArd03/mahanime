@@ -7,7 +7,6 @@ function getData() {
         dataType: 'json',
         success: function (result) {
             let anime = result.latest
-            console.log(anime)
             no = 1
             $.each(anime, function (i, data) {
                 if (no == '15') {
