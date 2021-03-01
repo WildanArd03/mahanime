@@ -92,7 +92,6 @@ $('#anime-list').on('click','.detail-anime', function () {
                 let dnim1 =link[1].link
                 let dnim2 =link[2].link
                 let dnim3 =link[3].link
-                console.log(dlink)
                 $('.d-anime').append(`
                 <div class="card mb-3">
                     <div class="card-header">
