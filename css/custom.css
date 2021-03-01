@@ -1,22 +1,3 @@
-.flexbox-thumb::before {
-    color: white;
-    font-size: 25px;
-    transition: all .1s ease-in-out 0;
-    content: 'Detail Anime' !important;
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    margin-top: -35px;
-    margin-left: -35px;
-    background:none !important;
-    background-size: cover;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity .5s ease-out;
-}
 .flexbox-number {
     background: #6e6dfb;
     border-top: solid 5px #605fe0;
@@ -35,4 +16,28 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.series-title h2 {
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:normal;
+}
+.bg-dcustom{
+    width: 400px;
+    background-color: #605fe0;
+    color: white;
+}
+.card-body ul {
+    list-style: outside none none;
+}
+.card-body ul li strong{
+    background: #1e7ce5;
+    width: 100px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin:10px;
 }
